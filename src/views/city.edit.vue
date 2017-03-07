@@ -3,11 +3,11 @@
 		<div class="card">
 			<ul class="card-content">
 				<li class="card-content--item">
-					<h2>城市：</h2>
+					<h2>城市名</h2>
 					<input class="card-content--inputtext" type="text" v-model="ownCity.name" />
 				</li>
 				<li class="card-content--item">
-					<h2>行政区(以“||”作为分隔，最后不以“||”结尾)：</h2>
+					<h2>行政区(以“||”作为分隔，最后不以“||”结尾)</h2>
 					<input class="card-content--inputtext" type="text" v-model="ownCity.districts" />
 				</li>
 			</ul>
@@ -120,7 +120,9 @@
 					})
 				}).then( () => {
 					this.$router.push({name: 'cities'})
-				}).catch( swal.noop )
+				}).catch( err => {
+					swal('失败', `${ err }`, 'error')
+				})
 			}
 		}
 	}

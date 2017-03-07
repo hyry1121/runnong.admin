@@ -210,7 +210,9 @@
 					})
 				}).then( () => {
 					this.$router.push({name: 'shops'})
-				}).catch( swal.noop )
+				}).catch( err => {
+					swal('失败', `${ err }`, 'error')
+				})
 			}
 		}
 	}

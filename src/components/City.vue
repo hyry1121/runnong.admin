@@ -2,11 +2,11 @@
 	<div class="card">
 		<ul class="card-content">
 			<li class="card-content--item">
-				<h2>商店名</h2>
+				<h2>城市名</h2>
 				<span class="card-content--text">{{ city.name }}</span>
 			</li>
 			<li class="card-content--item">
-				<h2>行政区</h2>
+				<h2>行政区(以“||”作为分隔，最后不以“||”结尾)</h2>
 				<span class="card-content--text">{{ city.districts }}</span>
 			</li>
 		</ul>
