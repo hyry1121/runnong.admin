@@ -61,7 +61,7 @@
 					data: ownSlider
 				})
 				.then( ({oldData,data}) => {
-					return swal( '更新幻灯片成功', `${ oldData.title } => ${ data.title }`, 'success' )
+					return swal( '更新幻灯片成功', '', 'success' )
 				})
 				.catch( err => {
 					this.isDisabled = false
