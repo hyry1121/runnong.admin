@@ -51,11 +51,11 @@
 				</li>
 				<li class="card-content--item">
 					<h2>起送价(纯数字)</h2>
-					<input class="card-content--inputnumber" type="number" v-model="ownShop.postage" />
+					<input class="card-content--inputnumber" type="number" v-model="ownShop.priceBeforePost" />
 				</li>
 				<li class="card-content--item">
 					<h2>配送价(纯数字)</h2>
-					<input class="card-content--inputnumber" type="number" v-model="ownShop.priceBeforePost" />
+					<input class="card-content--inputnumber" type="number" v-model="ownShop.postage" />
 				</li>
 				<li class="card-content--item">
 					<h2>显示</h2>
