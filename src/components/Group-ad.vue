@@ -12,7 +12,7 @@
 				<input class="card-content--inputtext" type="text"
 					:disabled="isDisabled"
 					v-model="groupAd.img"/>
-				<img class="card-content--img---100w" :src="groupAd.img" />
+				<img class="card-content--img---100w" v-bind:src="groupAd.img" />
 			</li>
 		</ul>
 		<ul class="card-action">
